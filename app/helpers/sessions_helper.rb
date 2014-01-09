@@ -8,7 +8,6 @@ module SessionsHelper
 	end
 
 	def signed_in?
-		puts current_user
 		!current_user.nil?
 	end
 
