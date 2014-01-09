@@ -55,6 +55,7 @@ describe "User Pages" do
 
                 it { should have_title(user.name) }
                 it { should have_selector('div', text: 'Welcome') }
+                it { should have_link('Sign out') } # test that it signs you in
             end
         end
     end
