@@ -12,7 +12,7 @@ RSpec::Matchers.define :have_error_message do |message|
 	end
 end
 
-def sign_in user, options={}
+def sign_in(user, options={})
 	if options[:no_cabybara]
 		# Sign in when not using Cabybara
 		remember_token = User.new_remember_token
